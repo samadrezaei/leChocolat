@@ -1,4 +1,4 @@
-.row-header{
+row-header{
     margin:0px auto;
     padding:0px;
 }
@@ -12,12 +12,6 @@
     background-color: #dbb08d;
     margin:0px auto;
     padding: 20px 0px 20px 0px;
-}
-.jumbotron {
-    padding:70px 30px 70px 30px;
-    margin:0px auto;
-    background: #6E3F19;
-    color:floralwhite;
 }
 .jumbotron {
     padding:70px 30px 70px 30px;
@@ -41,15 +35,17 @@ body{
     color:floralwhite;
     background-color:#6E3F19
 }
-tr:hover {background-color:#dbb08db0!important}
+tr:hover {
+    background-color:#dbb08d !important
+}
 .tab-content {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     padding: 10px;
   }
-  .carousel {
-    background:#914d15b0
+.carousel {
+    background:#914d15;
 }
 .carousel-item {
   height: 300px;
@@ -59,4 +55,9 @@ tr:hover {background-color:#dbb08db0!important}
     top: 0;
     left: 0;
     min-height: 300px;
+}
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
 }
