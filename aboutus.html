@@ -2,48 +2,55 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags always come first -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Bootstrap CSS -->
+
+
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Font awesome icons -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <!-- Local external CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <!-- endbuild -->
+
     <title>Le Chocolat</title>
+
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
-
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
-
-            <!-- Logo -->
-            <a class="navbar-brand" href="./index.html"><img src="images/logo.png" height="40" width="54"></a>
-
-            <!-- Sandwich button -->
+            <!-- <a class="navbar-brand" href="#">Le Chocolat</a> -->
+            <a class="navbar-brand" href="./index.html">
+                <img src="images/logo.png" height="40" width="54">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>
-                            Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span>
-                            About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>
-                            Contact</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./index.html">
+                            <span class="fa fa-home fa-lg"></span> Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./aboutus.html">
+                            <span class="fa fa-info fa-lg"></span> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./menu.html">
+                            <span class="fa fa-list fa-lg"></span> Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contactus.html">
+                            <span class="fa fa-address-card fa-lg"></span> Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- HEADER -->
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -53,25 +60,29 @@
                         recipes. Our creations will travel you in the chocolate world!</p>
                 </div>
                 <div class="col col-sm">
-                    <img src="images/logo.png">
+                    <img src="images/logo.png" class="img-fluid">
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- MAIN CONTENT -->
     <div class="container">
-
-        <!-- Breadcrumbs Section-->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">About us</li>
+                <li class="breadcrumb-item active" aria-current="page"> About us</li>
             </ol>
         </nav>
-
-        <!-- Our History Section -->
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-12">
+                <h3>About Us</h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-sm-6">
                 <h2>Our History</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper nunc quis maximus
                     pharetra. Quisque ut molestie ante. Donec mattis pharetra erat, eu ultricies ipsum faucibus et.
@@ -80,8 +91,7 @@
                 <p>Nulla ultrices diam at tortor volutpat, <em>et facilisis justo facilisis</em>. Phasellus dignissim
                     euismod mi eget dignissim. Sed eget consequat urna. </p>
             </div>
-            <!-- Our history card -->
-            <div class="col-sm">
+            <div class="col col-sm">
                 <div class="card">
                     <h3 class="card-header bg-secondary text-white">Facts At a Glance</h3>
                     <div class="card-body">
@@ -97,35 +107,127 @@
                         </dl>
                     </div>
                 </div>
-
             </div>
         </div>
 
-        <!-- Corporate Leadership Section -->
+
         <div class="row">
             <div class="col-12">
                 <h2>Corporate Leadership</h2>
-                <h3>Jim Alcon <small>Chief Executive Officer </small></h3>
-                <p class="d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible for the policy and
-                    strategy of our company.
-                </p>
-                <h3>Bill Peterson <small>Chief Financial Officer </small></h3>
-                <p class="d-none d-sm-block">Bill Peterson is the CFO of our company. He is responsible for all the
-                    financial decisions of our
-                    company. </p>
-                <h3>John Cook <small>Chef</small></h3>
-                <p class="d-none d-sm-block">Our Chef, John Cook has specialized in the production of chocolates and he
-                    has created the receipts
-                    for our chocolates. </p>
-                <h3>Vasilis Wilson <small>Sous-chef </small></h3>
-                <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current trends in pastry and
-                    contributes his innovative
-                    ideas in our products. </p>
+                <!-- Tabbed Navigation-->
+
+                <!--                 <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab"> Jim Alcon, CEO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab2" role="tab" data-toggle="tab"> Bill Peterson, CFO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab3" role="tab" data-toggle="tab"> John Cook, C</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tab4" role="tab" data-toggle="tab"> Vasilis Wilson, SC</a>
+                    </li>
+                </ul> -->
+
+                <!--                 <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="tab1">
+                        <h3>Jim Alcon <small>Chief Executive Officer </small></h3>
+                        <p class="d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible for the
+                            policy
+                            and
+                            strategy of our company. </p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="tab2">
+                        <h3>Bill Peterson <small>Chief Financial Officer </small></h3>
+                        <p class="d-none d-sm-block">Bill Peterson is the CFO of our company. He is responsible for all
+                            the
+                            financial decisions of our company. </p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="tab3">
+
+                        <h3>John Cook <small>Chef</small></h3>
+                        <p class="d-none d-sm-block">Our Chef, John Cook has specialized in the production of
+                            chocolates
+                            and he
+                            has created the receipts for our chocolates. </p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane fade" id="tab4">
+                        <h3>Vasilis Wilson <small>Sous-chef </small></h3>
+                        <p class="d-none d-sm-block">Vasilis Wilson is well informed of all the current trends in
+                            pastry
+                            and
+                            contributes his innovative ideas in our products. </p>
+                    </div>
+                </div> -->
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Jim Alcon <small>Chief Executive Officer </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Jim Alcon is the CEO of our company. He is responsible
+                                    for the policy and strategy of our company. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>Bill Peterson <small>Chief Financial Officer </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Bill Peterson is the CFO of our company. He is
+                                    responsible for all the financial decisions of our company. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                <h4>John Cook <small>Chef</small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Our Chef, John Cook has specialized in the production
+                                    of chocolates and he has created the receipts for our chocolates. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                <h4>Vasilis Wilson <small>Sous-chef </small></h4>
+                            </button>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                <p class="col d-none d-sm-block">Vasilis Wilson is well informed of all the current
+                                    trends in pastry and contributes his innovative ideas in our products. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <!-- Table -->
         <div class="row row-content">
+
             <div class="col-12 col-sm-9">
                 <h2> Create your milk chocolate!</h2>
                 <div class="table-responsive">
@@ -133,7 +235,7 @@
                         <caption>This recipe makes a bar of about 100g.</caption>
                         <thead class="thead-dark">
                             <tr>
-                                <th>Ingredients</th>
+                                <th>Igredients</th>
                                 <th>Quantity</th>
                             </tr>
                         </thead>
@@ -158,28 +260,28 @@
                     </table>
                 </div>
             </div>
+
             <div class="col-12 col-sm-3">
+
             </div>
+
         </div>
 
     </div>
 
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="row">
-
-                <!-- Menu footer column -->
                 <div class="col-5 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./aboutus.html">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="./menu.html">Menu</a></li>
                         <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
-
-                <!-- Address footer column -->
                 <div class="col-6 col-sm-5">
                     <h5>Our Address</h5>
                     <address>
@@ -192,9 +294,7 @@
                         <a href="mailto: chocolat@nomail.net"> chocolat@nomail.net </a>
                     </address>
                 </div>
-
-                <!-- Social links footer column -->
-                <div class="col col-sm-4 align-self-center">
+                <div class="col-sm align-self-center">
                     <div style="text-align:center">
                         <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+">
                             <i class="fa fa-google-plus"></i></a>
@@ -206,28 +306,29 @@
                             <i class="fa fa-twitter"></i></a>
                         <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/">
                             <i class="fa fa-youtube"></i></a>
-                        <a class="btn btn-social-icon" href="mailto:info@site.com">
+                        <a class="btn btn-social-icon" href="mailto:">
                             <i class="fa fa-envelope-o"></i></a>
                     </div>
                 </div>
-
             </div>
-
-            <!-- Copyright paragraph -->
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <p> &copy; Copyright 2019 Le Chocolat</p>
+                    <p>&copy; Copyright 2018 Le Chocolat</p>
                 </div>
             </div>
-
         </div>
     </footer>
+    <!-- END OF FOOTER -->
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- endbuild -->
+
 </body>
 
 </html>
