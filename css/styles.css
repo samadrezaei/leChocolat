@@ -61,3 +61,8 @@ tr:hover {
     position: absolute;
     bottom: 0px;
 }
+#carouselButtons {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
+}
